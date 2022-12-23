@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<odoo>
+ <!-- Librairie App Menu -->
+ <menuitem id="menu_librairie" name="Librairie" />
+
+ <!-- Action pour ouvrir la liste des livres -->
+ <act_window id="action_librairie_livre"
+ name="Librairie Livres"
+ res_model="librairie.livre"
+ view_mode="tree,form"
+ />
+ <!-- Menu pour ouvir la liste des livres -->
+ <menuitem id="menu_librairie_livre"
+ name="Livres"
+ parent="menu_librairie"
+ action="action_librairie_livre"
+ />
+</odoo>
